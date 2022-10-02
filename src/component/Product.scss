@@ -1,0 +1,48 @@
+.product-container {
+  padding: 10px;
+  border: 1px solid red;
+  display: flex;
+  border: 24px;
+  .content-left {
+    border: 1px solid yellow;
+    width: 50%;
+    text-align: center;
+  }
+  .content-right {
+    border: 1px solid green;
+    width: 50%;
+  }
+  .Buy {
+    padding: 15px 55px;
+    display: block;
+    background-color: red;
+    cursor: pointer;
+  }
+  .quantity {
+    width: 30px;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .img1 {
+    // width: 200px;
+    height: 350px;
+    object-fit: cover;
+  }
+  .img2 {
+    display: block;
+    width: 150px;
+    // height: 100px;
+    object-fit: cover;
+  }
+  .img_up {
+    display: block;
+  }
+  .img_down {
+    display: flex;
+  }
+  img {
+    cursor: pointer;
+  }
+}
