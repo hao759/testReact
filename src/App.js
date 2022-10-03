@@ -5,6 +5,7 @@ import Product from "./component/Product";
 import "react-image-lightbox/style.css";
 import Nav from "./component/Navigation/Nav.js";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Weather from "./component/weather/weather";
 
 // import TodoList from "./component/Todoapp";
 function App() {
@@ -12,16 +13,16 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-        <Route path="/about">
-          {/* <About /> */}
-          {/* <Nav /> */}
+        <Route path="/weather">
+          <Weather />
         </Route>
-        <Route path="/users">
-          {/* <Users /> */}
+
+        <Route path="/product">
+          <Product />
         </Route>
-        <Route path="/">
-          {/* <Home /> */}
-        </Route>
+        <Route path="/home">{"Ko co j ca"}</Route>
+        <Route path="*">{"Dau *"}</Route>
+        {/* duoi cung */}
       </Switch>
       <div className="App">
         {/* <header className="App-header">
@@ -30,8 +31,6 @@ function App() {
         <div className="content-right">
           {/* <AddNewProduct /> */}
           <hr />
-
-          <Product />
         </div>
       </div>
     </Router>

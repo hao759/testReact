@@ -1,14 +1,18 @@
-import './Nav.scss';
+import "./Nav.scss";
 // import "./Product.scss";
+import { Link, NavLink } from "react-router-dom";
 
-const Nav=()=>{
-return(
+const Nav = () => {
+  return (
     <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
-)
-}
-export default Nav
+      <NavLink exact to="/home">
+        Home
+      </NavLink>
+      <NavLink to="/weather">weather</NavLink>
+      <NavLink to="/users">User</NavLink>
+      <NavLink to="/product">Product</NavLink>
+      {/* / match nen chay het */}
+    </ul>
+  );
+};
+export default Nav;
