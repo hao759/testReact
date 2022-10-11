@@ -11,6 +11,7 @@ const Nav = () => {
       <NavLink to="/weather">weather</NavLink>
       <NavLink to="/users">User</NavLink>
       <NavLink to="/product">Product</NavLink>
+      <NavLink to="/OTP">OTP</NavLink>
       {/* / match nen chay het */}
     </ul>
   );
